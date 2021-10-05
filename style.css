@@ -1,0 +1,232 @@
+/*----- fonts ------*/
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+/*--------
+ common styles or utilities
+ ------ */
+ :root{
+    --pink:#d880a9d7;
+ }
+ *{
+    font-family: 'Ephesis', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: all .2s linear;
+ }
+*::selection{
+   background:var(--pink);
+   color: #fff;
+}
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6rem;
+}
+body{
+   background: #f7f7f7;
+}
+main{
+display: flex;
+flex-direction:column ;
+align-items: center;
+
+}
+.home{
+   background-color: #FFFFFF;
+   border-radius: 5px;
+   width: 970px;
+   padding: 30px;
+   margin-top: 21px;
+}
+section{
+   padding: 2rem 9%;
+}
+.btn{
+   display: inline-block;
+   /* padding: 8rem 3rem; */
+   border: .5rem solid rgb(116, 10, 77);
+   color: rgb(116, 10, 77);
+   font-size: 1.7rem;
+   border-radius: .5rem;
+   margin-left: 2rem;
+}
+
+
+
+ 
+ 
+ header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0 .5erm rgba(0,0,0,.1);
+ } 
+ header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: lightpink;
+ }
+ header .logo i{
+    padding-right: .5rem;
+    color: palevioletred;
+ }
+ nav a{
+
+   font-size: 2em;
+   color: palevioletred;
+  margin-left: 5rem;
+}
+header .navber a:hover{
+   color: rgb(236, 15, 89);
+}
+#menu-bar{
+   font-size: 3rem;
+   cursor: pointer;
+   color: palevioletred;
+   border: .1rem solid palevioletred;
+   border-radius: .3rem;
+   padding: .5rem 1.5rem;
+ 
+}
+.home{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   min-height: 100vh;
+   align-items: center;
+   background: url(../icecream/images/background\ -4.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+}
+.home .content{
+   flex: 1 1 40rem;
+   padding-top: 6.5rem;
+}
+.home .image{
+   flex: 1 1 40rem;
+
+}
+.home .image .img{
+  width: 100%;
+  padding: 1rem;
+  
+}
+.home .content h3{
+   font-size: 5rem;
+   color:rgb(116, 10, 77);
+}
+.home .content p{
+   font-size: 1.7rem;
+   color:rgb(116, 10, 77);
+   padding: 2rem;
+}
+ /* speciality style start */
+.our h2{
+  margin-bottom: 26px;
+
+}
+ .home .our h2{
+   font-size: 5rem;
+   color:rgb(116, 10, 77);
+   text-align: center;
+  
+}
+
+.blogs{
+   display:grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 24px;
+   grid-row-gap: 30px;
+}
+.blog .thumnail img{
+   width: 250px;
+   height: 250px;
+}
+.course-detail{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.fa-star{
+   font-size: 12px;
+}
+.fa-star.filled{
+   color: rgba(235, 31, 62, 0.863);
+}
+.fa-star.empty{
+   color:gray;
+}
+
+.blog-info .blog-title {
+   color:lightcoral;
+}
+.blog-info {
+   margin-left: 16px  ;
+   font-size:2rem ;
+   color:palevioletred;
+}
+ /* speciality style end */
+
+footer p{
+   text-align: center;
+   font-size: 2rem;
+}
+
+ /* Meadia queries */
+
+
+
+ /* Mobile devices */
+ /* @media(max-width:1000px) {
+   html{
+      font-size: 55%;
+      
+   }
+   header{
+      padding: 2rem;
+   }
+ }
+ @media(max-width:768px) {
+    #menu-bar{
+       display: initial;
+    }
+    header .navbar{
+       position: absolute;
+       top: 100%; left: 0; right: 0;
+       background: #f7f7f7;
+       border-top: .1rem solid rgba(0,0,0,.1);
+    }
+    header .navbar a{
+       margin: 1.5rem;
+       padding: 1.5rem;
+       display: block;
+     border: .2rem solid rgba(0,0,0,.1);
+     border-left: .5rem solid  rgba(0,0,0,.1);
+     background: #f7f7f7;
+    }
+ }
+ @media(max-width:768px) {
+   html{
+      font-size: 50%;
+      
+   }
+ } */
+/* @media screen and (max-width:768px) {
+   .home{
+      grid-template-columns: repeat(1, 1fr);
+   }
+   @media screen and (max-width:768px) {
+      .home{
+         grid-template-columns: repeat(1, 1fr);
+      }
+} */
